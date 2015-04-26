@@ -69,15 +69,20 @@ class Tri {
 
 class Quadrat {
    
-  PVector p4 = p1.x-(p2.y-p1.y),p1.y+(p2.x-p1.x);
-  PVector p5 = p2.x-(p2.y-p1.y),p2.y+(p2.x-p1.x); {
+  PVector p4 = v1, v2;
+  float v1 = p1.x-(p2.y-p1.y);
+  float v2 = p1.y+(p2.x-p1.x);
+  PVector p5 = w1, w2;
+  float w1 = p2.x-(p2.y-p1.y);
+  float w2 = p2.y+(p2.x-p1.x); {
   
   }
-  void display(beginShape();
-    vertex(p1);
-    vertex(p2);
-    vertex(p4);
-    vertex(p5);
-    endShape(CLOSE)) {
+  void display(){
+    beginShape();
+      vertex(p1);
+      vertex(p2);
+      vertex(p4);
+      vertex(p5);
+    endShape(CLOSE);
   }
 }
