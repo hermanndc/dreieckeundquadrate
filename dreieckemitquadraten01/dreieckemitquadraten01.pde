@@ -3,13 +3,15 @@
 
 
 Tri my_triangle;
-
+Quadrat my_quadrat;
 void setup() {
   size(400, 400);
   PVector p1 = new PVector( random(width), random(height));
   PVector p2 = new PVector( random(width), random(height));
 
   my_triangle = new Tri(p1, p2);
+  // now create a new Quadrat
+  my_quadrat = new Quadrat(PVector _v1, PVector _v2, PVector _p1, PVector _p2, float _w1, float _w2);
 
   //PVector p3 = new PVector( random(width), random(height));
   //PVector p4 = new PVector( random(width), random(height));
